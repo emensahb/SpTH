@@ -66,12 +66,8 @@
     "className": "form--checkbox",
     "required": "false",
     "checked": "false",
-    "conditional": 
-    {
-        "name": "date_of_birth"
-        
-        
-    }},
+    "conditional": "date_of_birth"
+   },
     {
         "tag": "input",
         "name": "favorite_food",
