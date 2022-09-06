@@ -1,0 +1,85 @@
+[{
+    "tag": "input",
+    "name": "first_name",
+    "placeholder": "Jane",
+    "type": "text",
+    "human_label": "First Name",
+    "className": "form--input",
+    "required": "false"
+    }, 
+    
+    {
+    "tag": "input",
+    "name": "last_name",
+    "placeholder": "Smith",
+    "type": "text",
+    "human_label": "Last Name",
+    "className": "form--input",
+    "required": "false"
+    }, 
+    
+    {
+    "tag": "input",
+    "name": "email",
+    "placeholder": "jane.smith@example.com",
+    "type": "email",
+    "human_label": "Email Address",
+    "className": "form--input",
+    "required": "false"
+    }, 
+    
+    {
+    "tag": "input",
+    "name": "phone_number",
+    "placeholder": "111-1111-111",
+    "type": "text",
+    "human_label": "Phone Number",
+    "className": "form--input",
+    "required": "false"
+    }, 
+    
+    {
+    "tag": "input",
+    "name": "job_title",
+    "placeholder": "Leave Specialist",
+    "type": "text",
+    "human_label": "Job Title",
+    "className": "form--input",
+    "required": "false"
+    }, 
+    
+    {
+    "tag": "input",
+    "name": "date_of_birth",
+    "placeholder": "01/01/2000",
+    "type": "date",
+    "human_label": "Date of Birth",
+    "className": "form--input",
+    "required": "true"
+    },
+
+    {
+    "tag": "input",
+    "name": "parental_consent",
+    "type": "checkbox",
+    "human_label": "Parental Consent",
+    "className": "form--checkbox",
+    "required": "false",
+    "checked": "false",
+    "conditional": 
+    {
+        "name": "date_of_birth"
+        
+        
+    }},
+    {
+        "tag": "input",
+        "name": "favorite_food",
+        "placeholder": "Lasagna",
+        "type": "text",
+        "human_label": "Favorite Food",
+        "className": "form--input",
+        "required": "false"
+        }
+    ]
+    
