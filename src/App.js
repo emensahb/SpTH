@@ -3,18 +3,23 @@ import jsonData from './data.json'
 
 // console.log(data)
 function App() {
+  // To help create the dynamic input or any other tag
   let Tag="" 
   const data = JSON.parse(JSON.stringify(jsonData))
   const [formData, setFormData] = React.useState({})
 
 
+  // Creates JSON object of form when Submit is clicked
   function handleSubmit(event) {
-    console.log(event)
     event.preventDefault()
-    
+    const myFormData = new FormData(event.target);
+    const formDataObj = {};
+    myFormData.forEach((value, key) => (formDataObj[key] = value));
+    console.log(formDataObj);
+ 
   }
 
-
+//To update form as data is inputted
   function handleChange(event) {
       setFormData(prevFormData => {
           return {
@@ -27,7 +32,7 @@ function App() {
      
     }
 
-  
+  //Function that determins if parental consent is needed. It will check the box
     function needsParentalConsent(){
       const dob = formData.date_of_birth
       if (dob){
@@ -38,13 +43,10 @@ function App() {
     }
 
 
-
+// Mapping over JSON object
   const fullForm = data.map(e => { 
     Tag = e.tag
     const required =  e.required === "true" ? true :false
-
-
-  
 
     return (
         <>
