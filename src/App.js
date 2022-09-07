@@ -30,13 +30,12 @@ function App() {
               [event.target.name]: event.target.type === "checkbox" ? event.target.checked : event.target.value
         }
       })
-
       
     }
       
   
     
-  //Function that determins if parental consent is needed. It will check the box
+  //Function that determines if parental consent is needed. It will check the box
     function needsParentalConsent(){
       const dob = formData.date_of_birth
       if (dob){
@@ -47,12 +46,13 @@ function App() {
     }
 
 
-// Mapping over JSON object
+// Mapping over data 
   const fullForm = data.map(e => { 
     Tag = e.tag
     const required =  e.required === "true" ? true :false
    
     
+   //shows if user is 13 or younger 
    function showConsent (){
       if (needsParentalConsent()){
         console.log(needsParentalConsent())
