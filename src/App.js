@@ -13,10 +13,7 @@ function App() {
   // Creates JSON object of form when Submit is clicked
   function handleSubmit(event) {
     event.preventDefault()
-    const filledForm = new FormData(event.target);
-    const filledFormObj = {};
-    filledForm.forEach((value, key) => (filledFormObj[key] = value));
-    console.log(filledFormObj);
+    console.log(formData);
  
   }
 
