@@ -23,7 +23,7 @@ function App() {
  
 //To update form as data is inputted
   function handleChange(event) {
-      console.log(event)
+      // console.log(event)
         setFormData(prevFormData => {
           return {
               ...prevFormData,
@@ -55,7 +55,7 @@ function App() {
    //shows if user is 13 or younger 
    function showConsent (){
       if (needsParentalConsent()){
-        console.log(needsParentalConsent())
+        // console.log(needsParentalConsent())
         return true
       } else {
         const note = !e.conditional
